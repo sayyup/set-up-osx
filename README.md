@@ -96,4 +96,4 @@ Please do test (```npm test```), debug and create pull requests/issues/remarks t
 
 
 # Alternatives
-Different alternatives exist, like [Github Boxen](https://boxen.github.com), custom bash scripts or [Cask](http://caskroom.io) (based on [Brew](https://brew.sh)), but I missed the option to merge apps and (OSX) scripts in a flow that is repeatable and easy to extend. And because I like [Node.js](https://nodejs.org) which was a nice experiment.
+Different alternatives exist, like [Github Boxen](https://boxen.github.com), custom bash scripts or [Cask](http://caskroom.io) (based on [Brew](http://brew.sh)), but I missed the option to merge apps and (OSX) scripts in a flow that is repeatable and easy to extend. And because I like [Node.js](https://nodejs.org) which was a nice experiment.
