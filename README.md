@@ -44,7 +44,7 @@ This is described in any type of file but the content needs to be formatted as J
 
 These values are all optional, but ```note``` and ```category``` are the basic JSON properties of a step.
 
-An example would then be:
+An example (like ```example.json```) would then be:
 
 ```json
 {
