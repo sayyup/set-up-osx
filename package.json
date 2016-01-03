@@ -1,0 +1,19 @@
+{
+  "name": "set-up-osx",
+  "version": "0.1.0",
+  "description": "Set up your Mac through an install script which describes all the necessary steps to execute.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "osx"
+  ],
+  "author": "Joey van Dijk",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "read": "^1.0.7",
+    "sudo-prompt": "^2.1.0"
+  }
+}

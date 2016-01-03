@@ -1,0 +1,96 @@
+{
+  "steps": [
+    {
+      "note": "Please install Dropbox",
+      "check": "/Applications/Dropbox.app",
+      "url": "https://www.dropbox.com/downloading?src=index",
+      "comments": [
+        "wait for selective sync to complete",
+        "check if all backup folders are correctly set"
+      ]
+    },
+    {
+      "note": "Add .bash_profile",
+      "check": "/Users/{*}/.bash_profile",
+      "comments": [
+        "Check copy of file in Dropbox"
+      ]
+    },
+    {
+      "note": "Please install NVM (Node Version Manager)",
+      "check": "/Users/{*}/.nvm/",
+      "url": "https://github.com/creationix/nvm",
+      "comments": [
+        "execute this in another terminal at ~/",
+        "nvm alias default vX.X.X"
+      ]
+    },
+    {
+      "note": "Please install Google Chrome",
+      "check": "/Applications/Google Chrome.app",
+      "url": "https://www.google.com/chrome/browser/desktop",
+      "subtasks": [
+        "disable sync passwords",
+        "encrypt with google credentials"
+      ]
+    },
+    {
+      "note": "Please install Brew",
+      "check": "/Library/Caches/Homebrew/",
+      "url": "http://brew.sh"
+    },
+    {
+      "note": "Please install Brew packages",
+      "execute": "brew install flow ffmpeg gifsicle jpeg libpng libtiff watchman freetype jasper graphicsmagick webpquicklook sslmate",
+      "comments": [
+        "? brew install homebrew/php/php55 > otherwise no PNG support"
+      ]
+    },
+    {
+      "category": "Finder settings"
+    },
+    {
+      "note": "Show hidden files in Finder",
+      "execute": "defaults write com.apple.finder AppleShowAllFiles YES",
+      "subtasks":[
+        "relaunch Finder to see the hidden files"
+      ]
+    },
+    {
+      "note": "Enable path bar in Finder",
+      "execute": "sudo defaults write com.apple.finder ShowPathbar -bool true"
+    },
+    {
+      "note": "Enable status bar in Finder",
+      "execute": "sudo defaults write com.apple.finder ShowStatusBar -bool true"
+    },
+    {
+      "note": "Enable tab bar in Finder",
+      "execute": "sudo defaults write com.apple.finder ShowTabBar -bool true"
+    },
+    {
+      "note": "Show hidden file extensions in Finder",
+      "subtasks": [
+        "go to Finder > Preferences > Advanced > show all file extensions"
+      ],
+      "comments": [
+        "ignore input source option!"
+      ]
+    },
+    {
+      "category": "Terminal tweaks"
+    },
+    {
+      "note": "OSX tweaks",
+      "execute": "ulimit -n 2048",
+      "comments": [
+        "see also .bash_profile"
+      ]
+    },
+    {
+      "note": "Install Evernote",
+      "check": "/Applications/Evernote.app",
+      "url": "https://www.evernote.com"
+    }
+  ]
+}
